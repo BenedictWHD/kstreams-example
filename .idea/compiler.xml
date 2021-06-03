@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="external-message-processor" />
+        <module name="internal-message-processor" />
+        <module name="common" />
+        <module name="data-ingest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="14" />
+      <module name="data-ingest" target="11" />
+      <module name="external-message-processor" target="14" />
+      <module name="internal-message-processor" target="11" />
+      <module name="Yetti-Microservices" target="14" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="data-ingest" options="-parameters" />
+      <module name="external-message-processor" options="-parameters" />
+      <module name="internal-message-processor" options="-parameters" />
+    </option>
+  </component>
+</project>
