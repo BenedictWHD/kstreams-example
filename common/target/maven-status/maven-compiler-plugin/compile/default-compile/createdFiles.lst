@@ -1,0 +1,16 @@
+com\yetti\common\internalmessage\BalanceQueryMessage$BalanceQueryMessageBuilder.class
+com\yetti\common\internalmessage\InternalMessageBuilder.class
+com\yetti\common\externalmessage\ExternalMessage.class
+com\yetti\common\ccy\CryptoCCY.class
+com\yetti\common\externalmessage\ExternalVoiceMessage.class
+com\yetti\common\internalmessage\AccountCreationMessage.class
+com\yetti\common\externalmessage\ExternalSMSMessage.class
+com\yetti\common\internalmessage\InternalMessageType.class
+com\yetti\common\internalmessage\InternalMessage.class
+com\yetti\common\ccy\CCY.class
+com\yetti\common\ccy\FiatCCY.class
+com\yetti\common\externalmessage\ExternalMessageSource.class
+com\yetti\common\internalmessage\TransactionMessage.class
+com\yetti\common\internalmessage\AccountCreationMessage$AccountCreationMessageBuilder.class
+com\yetti\common\internalmessage\BalanceQueryMessage.class
+com\yetti\common\internalmessage\TransactionMessage$TransactionMessageBuilder.class

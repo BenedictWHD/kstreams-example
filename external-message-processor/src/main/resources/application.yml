@@ -1,0 +1,22 @@
+spring.cloud.stream.kafka.binder.brokers: localhost:9094
+
+spring.cloud.stream:
+  function:
+    definition: externalMessageProcessor
+  bindings:
+    externalMessageProcessor-in-0:
+      destination: external_messages
+    externalMessageProcessor-out-0:
+      destination: internal_messages
+  kafka:
+      bindings:
+        externalMessageProcessor-in-0:
+          consumer:
+            configuration:
+              value:
+                deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+        externalMessageProcessor-out-0:
+          producer:
+            configuration:
+              value:
+                serializer: org.springframework.kafka.support.serializer.JsonSerializer
