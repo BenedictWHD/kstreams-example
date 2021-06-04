@@ -1,0 +1,33 @@
+version: "2"
+services:
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+  kafka:
+    image: wurstmeister/kafka
+    container_name: kafka
+    links:
+      - zookeeper
+    ports:
+      - 9092:9092
+      - 9094:9094
+    environment:
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_INTER_BROKER_LISTENER_NAME=INSIDE
+      - KAFKA_LISTENERS=INSIDE://kafka:9092,OUTSIDE://0.0.0.0:9094
+      - KAFKA_ADVERTISED_LISTENERS=INSIDE://kafka:9092,OUTSIDE://localhost:9094
+      - KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+      - KAFKA_CREATE_TOPICS=external_messages:1:1,internal_messages:1:1,transactions:1:1,balance_queries:1:1,account_creation:1:1,transactions.processed:1:1
+      - KAFKA_AUTO_CREATE_TOPICS_ENABLE=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    restart: "no"
+    ports:
+        - "9000:9000"
+    environment:
+        KAFKA_BROKERCONNECT: "kafka:9092"
+    depends_on:
+        - "kafka"
