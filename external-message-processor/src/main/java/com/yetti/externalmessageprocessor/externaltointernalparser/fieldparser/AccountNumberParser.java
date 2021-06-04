@@ -1,4 +1,4 @@
-package externaltointernalparser.fieldparser;
+package com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser;
 
 
 public class AccountNumberParser implements FieldParser<String> {

@@ -1,27 +1,27 @@
-package internalmessagecreator;
+package com.yetti.externalmessageprocessor.internalmessagecreator;
 
-import data.internalmessage.*;
+
+import com.yetti.common.internalmessage.*;
 
 @SuppressWarnings("unchecked")
 public class InternalMessageFactory {
 
     TransactionMessage.TransactionMessageBuilder transactionMessageBuilder = new TransactionMessage.TransactionMessageBuilder();
-    AccountCreationMessage.AccountCreationMessageBuilder InternalMessageBuilder = new AccountCreationMessage.AccountCreationMessageBuilder();
+    AccountCreationMessage.AccountCreationMessageBuilder internalMessageBuilder = new AccountCreationMessage.AccountCreationMessageBuilder();
     BalanceQueryMessage.BalanceQueryMessageBuilder balanceQueryMessageBuilder = new BalanceQueryMessage.BalanceQueryMessageBuilder();
 
-    public data.internalmessage.InternalMessageBuilder getInternalMessageBuilder(InternalMessageType internalMessageType) {
+    public InternalMessageBuilder getInternalMessageBuilder(InternalMessageType internalMessageType) {
 
         switch (internalMessageType) {
 
-            case TRANSACTION -> {
+            case TRANSACTION:
                 return transactionMessageBuilder;
-            }
-            case BALANCE_QUERY -> {
+            case BALANCE_QUERY:
                 return balanceQueryMessageBuilder;
-            }
-            case ACCOUNT_CREATION -> {
-                return InternalMessageBuilder;
-            }
+
+            case ACCOUNT_CREATION:
+                return internalMessageBuilder;
+
         }
 
         return null;

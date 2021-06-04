@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Yetti-Microservices.iml" filepath="$PROJECT_DIR$/.idea/Yetti-Microservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/data-ingest/data-ingest.iml" filepath="$PROJECT_DIR$/data-ingest/data-ingest.iml" />
       <module fileurl="file://$PROJECT_DIR$/external-message-processor/external-message-processor.iml" filepath="$PROJECT_DIR$/external-message-processor/external-message-processor.iml" />
       <module fileurl="file://$PROJECT_DIR$/internal-message-processor/internal-message-processor.iml" filepath="$PROJECT_DIR$/internal-message-processor/internal-message-processor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/kstreams-example.iml" filepath="$PROJECT_DIR$/.idea/kstreams-example.iml" />
     </modules>
   </component>
 </project>

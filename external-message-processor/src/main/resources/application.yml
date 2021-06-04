@@ -2,14 +2,21 @@ spring.cloud.stream.kafka.binder.brokers: localhost:9094
 
 spring.cloud.stream:
   function:
-    definition: externalMessageProducer
+    definition: processExternalMessage
   bindings:
-    externalMessageProducer-out-0:
+    processExternalMessage-in-0:
       destination: external_messages
+    processExternalMessage-out-0:
+      destination: internal_messages
   kafka:
       bindings:
-        externalMessageProducer-out-0:
+        processExternalMessage-out-0:
           producer:
             configuration:
               value:
                 serializer: org.springframework.kafka.support.serializer.JsonSerializer
+        processExternalMessage-in-0:
+          producer:
+            configuration:
+              value:
+                deserializer: org.springframework.kafka.support.serializer.JsonDeserializer

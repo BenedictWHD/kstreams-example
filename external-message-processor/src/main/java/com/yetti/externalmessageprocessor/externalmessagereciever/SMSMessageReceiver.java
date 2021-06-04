@@ -1,13 +1,14 @@
-package externalmessagereciever;
+package com.yetti.externalmessageprocessor.externalmessagereciever;
 
-import data.internalmessage.InternalMessage;
-import externaltointernalparser.SMSParser;
-import externaltointernalparser.fieldparser.InvalidFieldException;
-import data.externalmessage.ExternalSMSMessage;
+
+import com.yetti.common.externalmessage.ExternalSMSMessage;
+import com.yetti.common.internalmessage.InternalMessage;
+import com.yetti.externalmessageprocessor.externaltointernalparser.SMSParser;
+import com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser.InvalidFieldException;
 
 public class SMSMessageReceiver implements MessageReceiver<ExternalSMSMessage> {
 
-    private final externaltointernalparser.SMSParser SMSParser = new SMSParser();
+    private final SMSParser SMSParser = new SMSParser();
 
     @Override
     public InternalMessage processExternalMessage(ExternalSMSMessage externalMessage) {

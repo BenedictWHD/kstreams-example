@@ -1,14 +1,13 @@
-package externaltointernalparser;
+package com.yetti.externalmessageprocessor.externaltointernalparser;
 
-import data.ccy.CCY;
-import externaltointernalparser.fieldparser.*;
-import data.internalmessage.InternalMessage;
-import data.internalmessage.InternalMessageType;
-import data.externalmessage.ExternalSMSMessage;
-import internalmessagecreator.InternalMessageFactory;
+import com.yetti.common.ccy.CCY;
+import com.yetti.common.externalmessage.ExternalSMSMessage;
+import com.yetti.common.internalmessage.InternalMessage;
+import com.yetti.common.internalmessage.InternalMessageType;
+import com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser.*;
+import com.yetti.externalmessageprocessor.internalmessagecreator.InternalMessageFactory;
 
 import java.math.BigDecimal;
-import java.util.UUID;
 
 public class SMSParser implements ExternalMessageParser<ExternalSMSMessage> {
 

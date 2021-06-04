@@ -4,7 +4,6 @@
     <file url="file://$PROJECT_DIR$/data-ingest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data-ingest/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/external-message-processor/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/external-message-processor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/internal-message-processor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/internal-message-processor/src/main/resources" charset="UTF-8" />
   </component>

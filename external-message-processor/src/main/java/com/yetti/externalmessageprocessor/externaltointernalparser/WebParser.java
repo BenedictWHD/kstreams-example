@@ -10,7 +10,7 @@ import com.yetti.externalmessageprocessor.internalmessagecreator.InternalMessage
 
 import java.math.BigDecimal;
 
-public class VoiceParser implements ExternalMessageParser<ExternalWebMessage> {
+public class WebParser implements ExternalMessageParser<ExternalWebMessage> {
 
     private final Parser<String, String> accountNumberParser = new AccountNumberParser();
     private final Parser<String, CCY> ccyParser = new CCYParser();

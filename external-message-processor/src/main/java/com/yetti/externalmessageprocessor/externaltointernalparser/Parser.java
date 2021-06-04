@@ -1,6 +1,7 @@
-package externaltointernalparser;
+package com.yetti.externalmessageprocessor.externaltointernalparser;
 
-import externaltointernalparser.fieldparser.InvalidFieldException;
+
+import com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser.InvalidFieldException;
 
 public interface Parser<T, U> {
 

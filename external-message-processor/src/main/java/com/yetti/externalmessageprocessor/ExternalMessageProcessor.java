@@ -1,6 +1,8 @@
-import data.externalmessage.ExternalMessage;
-import data.internalmessage.InternalMessage;
-import externalmessagereciever.MessageReceiverFactory;
+package com.yetti.externalmessageprocessor;
+
+import com.yetti.common.externalmessage.ExternalMessage;
+import com.yetti.common.internalmessage.InternalMessage;
+import com.yetti.externalmessageprocessor.externalmessagereciever.MessageReceiverFactory;
 import org.apache.kafka.streams.KeyValue;
 import org.apache.kafka.streams.kstream.KStream;
 import org.springframework.beans.factory.annotation.Autowired;
