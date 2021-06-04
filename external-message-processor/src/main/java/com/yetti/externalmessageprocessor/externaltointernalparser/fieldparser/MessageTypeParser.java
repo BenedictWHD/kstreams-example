@@ -1,7 +1,6 @@
-package com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser;
+package externaltointernalparser.fieldparser;
 
-
-import com.yetti.common.internalmessage.InternalMessageType;
+import data.internalmessage.InternalMessageType;
 
 public class MessageTypeParser implements FieldParser<InternalMessageType> {
     @Override

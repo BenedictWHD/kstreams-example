@@ -1,4 +1,4 @@
-package com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser;
+package externaltointernalparser.fieldparser;
 
 import java.math.BigDecimal;
 

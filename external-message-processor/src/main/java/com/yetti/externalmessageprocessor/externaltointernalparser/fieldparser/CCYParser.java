@@ -1,7 +1,6 @@
-package com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser;
+package externaltointernalparser.fieldparser;
 
-
-import com.yetti.common.ccy.CCY;
+import data.ccy.CCY;
 
 public class CCYParser implements FieldParser<CCY> {
 

@@ -1,6 +1,6 @@
-package com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser;
+package externaltointernalparser.fieldparser;
 
-import com.yetti.externalmessageprocessor.externaltointernalparser.Parser;
+import externaltointernalparser.Parser;
 
 public interface FieldParser<T> extends Parser<String, T> {
 }

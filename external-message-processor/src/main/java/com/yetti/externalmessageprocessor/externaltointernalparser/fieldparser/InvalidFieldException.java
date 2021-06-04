@@ -1,4 +1,4 @@
-package com.yetti.externalmessageprocessor.externaltointernalparser.fieldparser;
+package externaltointernalparser.fieldparser;
 
 public class InvalidFieldException extends Exception {
     public InvalidFieldException(String message) {
